@@ -1,0 +1,746 @@
+% arara: pdflatex
+% chktex-file 18
+% chktex-file 8
+\documentclass[a4paper,10pt]{scrartcl}
+\usepackage{midgard}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{verse}
+\usepackage{siunitx}
+
+\def\drugname{Basilisk}
+
+\title{\drugname}
+\author{Dimitri Scheftelowitsch}
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+  \midgardabenteuer{}
+\end{center}
+
+\begin{abstract} Dies ist ein stark an „Snow Crash” angelehntes
+  Abenteuer. Der Autor bedankt sich bei Neal Stephenson für die Idee,
+  für den einen oder anderen Charakter und bei Carsten Burgard für den
+  Vorschlag, sich aus Büchern zu bedienen. Das Abenteuer kann ohne
+  Verwendung eines bestimmten Regelwerks verwendet werden, impliziert
+  aber eine Midgard-basierte Welt und nutzt Midgard-spezifische
+  Begriffe, insbesondere, was NPCs angeht. Auch die Werte der NPCs sind
+  für Midgard angegeben; falls man in einem anderen System spielt,
+  sollte man sie entsprechend anpassen.
+\end{abstract}
+
+\section{Meta}
+
+\paragraph{Danksagungen}
+
+Der größere Dank gebührt Carsten Burgard für die Motivation, ein
+Abenteuer zu schreiben sowie für hilfreiche Hinweise beim Entwurf und
+bei der Nachbereitung. Ferner bedankt sich der Autor bei den
+(freiwilligen) Testern Colin, Florian, Marcel und Qi. Die Idee des
+Abenteuers ist aus dem Buch „Snow Crash” von Neal Stephenson
+entnommen; das Setting kommt aus der Welt des Rollenspielsystems
+\emph{Midgard}.
+
+\paragraph{Getestete Systeme}
+Das Abenteuer wurde in einer vereinfachten Form im System \emph{Dungeon
+World} getestet. Der Autor glaubt, dass \emph{Dungeon World} für
+detektivische Abenteuer, die spezifische Fähigkeiten wie
+\emph{Wahrnehmung} oder \emph{Suchen} benötigen, wenig geeignet ist. Ein
+Test in \emph{Midgard} steht noch aus.
+
+\section{Einführung}
+
+\paragraph{Kurze Zusammenfassung}
+
+In einer Stadt in Moravod passieren Schlimme Dinge. Einige Menschen
+verhalten sich auffallend komisch, aber es fällt nichts genaues auf, an
+dem sie diese Anomalie feststellen können. Es ist vieles einfach nur…
+anders. Vor allem die Magier scheinen ausgesprochen unfähig, benebelt
+oder einfach nur vergesslich zu sein; manche Magier verschwinden. Auch
+normale Bürger verhalten sich bei sorgfältiger Betrachtung sehr
+generisch. Die Abenteurer müssen herausfinden, was dahinter steckt.
+
+\paragraph{Spoiler für den Spielleiter}
+
+Hinter dem Ganzen steckt ein Weltherrschaftsplot im kleinen Maßstab.
+Ein reicher Händler hat vor, zum Bürgermeister von Saragin gewählt zu
+werden.  Dabei setzt er nicht auf politische, sondern auch auf magische
+Technologien. Insbesondere beauftragt er einen schwarzen Hexer mit einem
+Zauber, das für eine beschränkte Zeit einen Menschen unter Kontrolle
+bringt. Der Hexer wiederum sieht das als Anlass, einen Kult in der Stadt
+zu etablieren. Mit den Ressourcen des Händlers wird ein für sich allein
+interessantes Artefakt, das \emph{Buch der Gesetze} angeschafft. Es ist
+uralt und gilt als verschollen (und das ist auch gut so); es ist eine
+der ersten vollständigen Anleitungen zur Geistesmagie, inklusive
+schwarzmagischer Praktiken. Das Abenteuer beginnt eine bis zwei Wochen
+vor der Wahl des Bürgermeisters. Die genaue Deadline ist dem SL
+überlassen, je nachdem, ob er mit viel oder wenig Zeitdruck spielen
+möchte.
+
+\section{Szenen}
+
+\subsection{Warm-up: Hey… wer seid ihr eigentlich?}
+
+Damit das Abenteuer losgehen kann, sollten die Spieler sich
+kennenlernen. Da es vollkommen langweilig ist, sich in einer Taverne zu
+begegnen und vollkommen motivationsfrei in ein Abenteuer zu fallen, gibt
+es eine optionale Szene der Bekanntmachung.
+
+\paragraph{Als Einstiegsabenteuer}
+Ein möglichst seriös und nicht kämpferisch aussehender Abenteurer (zur
+Not auch ein Dieb) wird von seinem aktuellen Arbeitgeber (Gilde,
+Priester, …) beauftragt, einen relativ sensiblen Brief zu übermitteln.
+Dabei wird er oder sie in einer dunklen Gasse nicht allzu weit vom Ziel
+entfernt von bewaffneten und sehr unfreundlichen Typen begegnet. Dem
+Spieler sollte klar sein, dass seine Auftraggeber die Worte „gestohlen”
+oder „gewaltsam entrissen” nicht kennen, wohl aber „verloren” und
+„selbst schuld”. Er sollte versuchen, um den Brief zu kämpfen, als wäre
+es sein eigenes Leben (was auch wirklich stimmt); in jedem Fall werden,
+als die Situation fast schon hoffnungslos erscheint, die anderen
+Abenteurer in die Gasse gelenkt. Die Angreifer sind erschrocken und
+verschwinden, wenn sie genug vom Kampf haben.
+
+\paragraph{Überleitung aus einer Kampagne}
+Alternativ stammt der Brief von einem mächtigen Magier (etwa Väterchen
+Mischka, aber Duregg ist auch denkbar). Letzterer ist an einem magischen
+Spiegel interessiert und schickt die Abenteurer nach Saragin, um
+selbigen abzuholen.
+
+\begin{textbox}
+  {\bf Der Brief}
+
+  Lieber Karl!
+
+  Hiermit schicke ich Dir den von Dir gewünschten Stein, als Zeichen
+  meiner Freundschaft und meines Respekts. Im Gegenzug nehme ich es mir
+  heraus, Dich nach einem deiner Spiegel zu fragen.
+
+  Dein \emph{(Name)}.
+
+  \emph{Anlage: Stein der Macht, nur vom Empfänger benutzbar}
+\end{textbox}
+
+\subsection{Eröffnung: Viel Verwirrung um… nichts?}
+
+Der Brief oben ist an Karl Petrov (s.u.) gerichtet, der ein Magier in
+der Magiergilde ist. Er empfängt die Abenteurer je nach Tageszeit in der
+Magiergilde oder bei sich daheim, ist aber nicht ganz bereit, das
+magische Spiegelpaar herauszugeben; es ist nämlich noch nicht ganz
+fertig.
+
+\bestiarium[name=Karl Petrov, mag=true, typ=Mensch, grad=6,
+In=m95, LP=20, AP=80, zauberEW=18, bes={Sb 10, Wk 70}, St=55, Gw=45]{}
+
+Als kleine Entschädigung lädt er die Abenteurer in \emph{Die Insel} ein.
+Kurz vor dem Eingang wird einer der Abenteurer von einer zwei Meter
+hohen Gestalt, dem Eisbären (s.u.) begegnet, der \emph{\drugname{}}
+anbietet. Karl nimmt es dankend (Sb ist hinreichend niedrig) an und
+nimmt eine Schriftrolle in die Hand. Weitere Schriftrollen gibt es noch
+nicht, aber der Eisbär ist gerne bereit, noch welche nachzuliefern,
+falls Bedarf besteht.
+
+\bestiarium[name=Bar, mag=false, typ=Mensch, grad=6,
+In=m83, LP=34, AP=100, bes={Ko 81, Gs 70}, St=97, Gw=57]{}
+
+Nach einer netten Unterhaltung in der \emph{Insel} erinnert sich Karl
+an die Rolle und schaut sie sich an. Dies ist ein Text in Zauberschrift,
+welcher einen Rauschzauber zu enthalten scheint, aber in Wahrheit ein
+Geisteszauber ist, dessen Wirkung unter genauer erläutert ist. Die
+Wirkung nach dem Ausrollen der Textrolle sieht wie folgt aus:
+
+Die Rolle bleibt in der Luft hängen, als wäre sie auf Fäden aufgehängt.
+Der Text verformt sich, die Zauberschrift vergröbert und verändert sich,
+so, als würde man das Pergament mit sehr klein geschriebenem Text
+schnell durchrollen.  Die Außenstehenden können das nur mit Glück
+erkennen, mit einer W'keit von 50\% sehen sie nur, dass der Text sich
+verändert und die Rolle sich komisch bewegt. Dann verschwindet das
+Pergament.
+
+Nach den ersten zwei Minuten passiert nichts, dann fängt der Zauberer
+an, sein Gesicht auf eine unnatürliche Weise zu verziehen und fuchtelt
+mit den Händen herum. Es sieht so aus, als wolle er schreien, aber es
+gelingt ihm nicht. Dazu fängt er an, verschiedenfarbig zu leuchten,
+worauf ihn die anwesenden Türsteher dann aus der \emph{Insel} werfen.
+Das letzte, was die Abenteurer hören, ist: „Das Tor zum Geist… So alt
+und doch so mächtig…”. Karl ist bis zum Ende des Abenteuers nicht mehr
+ansprechbar. Der Eisbär ist zu diesem Zeitpunkt schon verschwunden. 
+
+\subsection{Anhaltspunkte und Ermittlungen}
+
+\begin{itemize}
+  \item Politische Situation: Es sind Wahlen fällig. Es werden am
+    zweiten Tag nach der Anreise der Spieler Wahlplakate ausgehängt, in
+    denen man zur (Beobachtung der) Wahl aufgefordert wird.
+  \item Gerüchte um einen Schwarzen Kult™: Irgendwo im Wald, munkelt
+    man, gibt es einen Kult. So genau weiß man es nicht, aber der eine
+    oder andere Jäger oder Pilzsammler wird sich an ominöse Gesänge
+    erinnern. Tatsächlich liegt das daran, dass die Infizierten zum
+    alten Sägewerk konvergieren und da zombiehaft vor sich
+    herumexistieren und Rasputin anbeten. Ihre Gebete klingen
+    grauenhaft. Damit hängt auch zusammen, dass die Anzahl der
+    Obdachlosen, Bettler und anderer Vertreter der Unterschicht zum
+    Beginn der zweiten Woche des Abenteuers auffallend abnimmt. Am
+    Anfang kann man das nur merken, wenn man die weniger wohlhabenden
+    Viertel persönlich und genau beobachtet.
+  \item Die Magier werden auch ab einem bestimmten Zeitpunkt lahmgelegt.
+    Dies übernimmt Bar mit Visionsrollen.
+  \item Die Bibliothek der Magiergilde (man findet, wenn man gut sucht,
+      ein altes Manuskript „Die Magie des Sehens” sowie ein noch älteres
+      Manuskript „Zur neuen Zauberschrift”, in der die „neue”, für alle
+      anwesenden Magier schon veraltete und reformierte Zauberschrift,
+      hemmungslos kritisiert wird. Die „natürliche” Zauberschrift, die
+      auch als die zu den Ursprüngen der Magie nähere proklamiert wird,
+      sieht genau so aus, wie die auf der magischen Schriftrolle.)
+  \item In „Die Magie des Sehens” stehen einige Zauberformeln, die mit
+    intrinsischer Magie eines Lebewesens arbeiten, die ein gegebenes
+    verzaubertes Objekt sehen.
+  \item Falls nichts hilft: „Die Augen sind das Tor zum Geist, doch nur
+    der Weise kann sie durchdringen” wird in einem Theaterstück, einem
+    Buch, oder einem anderen kulturellen Artefakt explizit erwähnt. Zur
+    Not singt auch der Barde Vitali Pripyat ein entsprechendes Lied.
+  \item Bar hat eine sehr markante Tätowierung am Arm, waelische Runen
+    mit dem Text \emph{Eingeschränkte Selbstkontrolle}. Für erfahrene
+    Reisende ist das ein Zeichen, dass er schon mal in Birka straffällig
+    war. (Rauferei mit einigen schwer verletzten)
+\end{itemize}
+
+\subsection{Motivation für PCs}
+
+\begin{description}
+  \item[Humanismus] Karl Petrov oder seine Familie (Frau: Magda,
+    Tochter: Natascha) sind den Spielern hinreichend sympathisch, weil
+    sie hinreichend viel Interaktion mit diesen NPCs hatten.
+  \item[Verpflichtungen] Einer der Spieler hat immer noch einen Auftrag
+    offen, und ohne Karl funktioniert das alles leider nicht.
+  \item[Quest] Die Magiergilde setzt ein Preisgeld für die Auflösung der
+    doch sehr sonderbaren Ereignisse aus.
+  \item[Ein Angebot] Der Bürgermeister bekommt allerspätestens in der
+    zweiten Woche des Abenteuers Wind davon, dass irgendwas nicht in
+    Ordnung ist. Nun gibt es viele verschiedene Gründe, die dafür
+    verantwortlich sein können -- aber hier sind ein paar Reisende
+    angekommen, die etwas wissen können oder bei Ermittlungen die Rolle
+    das Kanonenfutters spielen können. Für solche Zwecke hat er einen
+    kleinen Keller unweit des Marktplatzes eingerichtet, wo er plausibel
+    abstreitbar Angebote machen kann, die man nicht ablehnen kann.
+  \item[Ein Angebot in schlimmer] Falls die Abenteurer mit ihren
+    Ermittlungen nicht besonders vorsichtig sind, werden sie vom
+    Bürgermeister, der sie für Verursacher des Chaos hält, konfrontiert
+    und angeschuldigt. Ihnen werden wenige Tage gegeben, um ihren Ruf
+    wiederherzustellen.
+\end{description}
+
+\subsection{Der Zauber}
+
+\zauber[name=\drugname{},
+  stufe=7,
+  art=Wortzauber,
+  prozess=Verändern,
+  agens=Feuer,
+  reagens=Feuer,
+  Wz=Geist,
+  Wb=Person,
+  Wd={4W6 Tage},
+Ur={dämonisch}]{}
+
+\emph{\drugname{}} wirkt nicht nur auf Magier und existiert in mehreren Formen.
+Für Magier, die die Zauberschrift lesen können, kann er in der Rolle
+wirken. Für nicht magisch begabte Menschen wird er in Form eines
+magischen Gifts oder einer Droge (Wirkstoff gemischt mit irgendwelchen
+Pilzen) vorkommen. Einen Tag nach der Infektion fängt der Kranke an, den
+Willen zu verlieren und driftet in Richtung des Waldes. Magier fangen
+an, farbig zu leuchten und fallen ins Koma.
+
+Hergestellt wird \drugname{} in Drogenform aus dem Blut eines Menschen, der
+mit \drugname{} verzaubert wurde, Lotusblüten, Pilzen und Gold. Dazu ist die
+kleine Kammer in Rasputins Laden ganz praktisch, und die Abenteurer
+werden da auf jeden Fall relevante alchemische Spuren finden.
+
+Die genaue Mechanik funktioniert wie folgt.
+
+\paragraph{Infektion}
+
+Ein nicht-Magier kann sich durch das Einnehmen der Droge infizieren.
+Menge ist nicht wichtig, denn der Wirkstoff saugt sich über die
+Schleimhaut ein.
+
+Ein Magier kann durch das Lesen der Rolle infiziert werden. Hier ist
+alles etwas komplizierter. Kritisch für die Infektion ist das
+Verständnis des Inhalts zusammen mit der inneren Magie des Subjekts. Auf
+der Rolle steht in Zauberschrift die alchemische Formel der Droge und
+ihre Zusammensetzung. Falls der Inhalt nicht verstanden wird, passiert
+nichts. Falls der Inhalt zu einem Teil gelesen und verstanden wird,
+passiert nichts, aber man erfährt auch nicht viel. Falls der Inhalt von
+einer nichtmagischen Person gelesen wird, kann diese den Inhalt
+verstehen.
+
+\paragraph{Wirkung}
+
+Für nicht-Magier ist die Wirkung anfangs ähnlich zu einem leichten
+Alkoholrausch. Alles ist gut, man hat das warme Bauchgefühl, das
+Richtige zu tun, und man hört Stimmen, die sagen, was man tun muss. Bei
+Magiern ist der berauschende Effekt stärker (magische Drogen haben auch
+interessante Effekte), kann aber dazu führen, dass die Person einfach zu
+nichts mehr in der Lage ist, mit leicht betrübten Augen herumsteht und
+vielleicht anfängt, bunt zu leuchten.
+
+\subsection{Der Kult im Wald}
+
+Im Wald, etwa zwei Stunden von der Stadt entfernt, stand ein altes
+Sägewerk.  Nun wird es nicht mehr benutzt, und der Weg dahin ist für die
+meisten unbekannt. Bragin hat dieses Sägewerk früher gefunden, jetzt
+befindet sich da Rasputins Kult.
+
+Im Grunde ist der Sinn des Kults ziemlich primitiv: Opfergaben stärken
+Rasputins Zauberkraft (in Midgard: AP), außerdem stellen zombifizierte
+Bürger eine mittelmäßig organisierte Kraft dar, die Gegner auch
+überrennen kann.
+
+\paragraph{Das Buch der Gesetze}
+
+Das Abenteuer ist insofern einfach gestrickt, als dass es ein relativ
+offensichtliches Artefakt gibt, über das es gelöst werden kann. Da das
+Buch der Gesetze eine Art Rootkit für die menschliche Seele ist, lassen
+sich mit \drugname{} Infizierte über eine einfache Sprache der Gesetze
+steuern. Andererseits sind Menschen in diesem Zustand nicht zu kreativer
+Arbeit fähig.
+
+Es lässt sich darin auch ein Befreiungszauber finden, der in der Sprache
+der Gesetze formuliert ist.
+
+Das Buch an sich ist eher ein Lehrbuch über Geistesmagie, geschrieben
+von einem kompetenten und zeitlich nicht eingeschränkten Hexer. Der
+Verfasser hält sich anonym, aber, wenn man es wirklich genau wissen
+möchte, wurde es in KanTaiPan von einem sphärenreisenden Magier
+geschrieben, der bei Dämonen zu Gast war und das gewonnene Wissen
+dokumentiert hat. Bei Dämonen sind geistige Viren nicht nur bekannt,
+sondern werden auch aktiv benutzt. Man kann eine Feuer-Metapher
+anwenden: Wenn man weiß, wie man damit sicher umgeht, ist das vollkommen
+akzeptabel, wenn man aber ahnungslos ist, ist man der Magie
+ausgeliefert. Der besagte Magier hat geglaubt, das Wissen geheimhalten
+zu können, wurde aber von Bragin überlistet. Nun ist das Buch entwendet
+und in den falschen Händen.
+
+\paragraph{Alternative Lösung}
+
+Da es nicht so einfach ist, an das Buch der Gesetze dranzukommen, sollte
+auch ein weniger direkter Weg auch zum Erfolg führen können. Allerdings
+sollte man etwas mehr Zeit in Ermittlungsarbeit investieren. Eine alte
+Alchimistin kann den Abenteurern eine Legende aus dem fernen KanTaiPan
+erzählen, nach der der Gelbe Herr für die Menschen 88 Gesetze
+geschrieben hat, den sie gefolgt haben. Nach der Legende ist der Sohn
+des Gelben Herrn, der Anarch gegen seinen Vater gegangen und in einer
+Nacht-und-Nebel-Aktion ein weiteres Gesetz verkündet, nach dem die
+Menschen zum selbstständigen Denken verpflichtet wurden. Als Strafe
+wurde der Anarch von seiner Sphäre verbannt.
+
+Diese Legende weist darauf hin, dass es ein Gegenzauber gibt. In der Tat
+gibt es in der Bibliothek moderne Abhandlungen über kantaipanische
+Mythen und vielleicht auch noch das eine oder andere Bild. Es findet
+sich auch ein Bild mit 89 Zeilen in alter Zauberschrift. Entziffern
+sollte etwas Intelligenz erfordern.
+
+\paragraph{Bragins Haus}
+
+Viktor Bragin wohnt mit Familie in einem relativ großen Haus am
+Marktplatz. Das Haus ist bewacht, initial von Söldnern, später auch von
+Infizierten. In seinem Büro kann man Dokumente zu Reisen in KanTaiPan
+(Münzen, Karten) finden. Seine Buchhaltung ist eher für die
+Steuerverwaltung interessant. Für die Abenteurer können Holzspäne vom
+Sägewerk und Einkaufslisten mit spezifischen alchemischen Inhalten
+interessant sein.
+
+\paragraph{Rasputins Antiquitätenladen}
+
+Der Laden ist fast vollständig legal und unauffällig. Einen direkten
+Verdacht kann nicht viel erwecken, aber bei genauer Betrachtung können
+den Abenteurern folgende Details auffallen.
+
+\begin{itemize}
+  \item Es wird nichts magisches verkauft. Dafür, dass Rasputin sich
+    nicht magisch kundig gibt, ist das nicht durch Zufall plausibel
+    erklärbar.
+  \item Im versteckten Keller findet sich dafür allerhand magisches
+    Material.  Das Buch ist in einer Nische versteckt, aber es gibt auch
+    so genügend Spuren: Pergamente, Briefe zu anderen Hexern mit
+    Andeutungen und Fragen, Notizen.
+\end{itemize}
+
+Um in den Keller zu kommen, muss man aber an dem Eisbär vorbeikommen. Ab
+Tag 4 wird das Buch der Befehle am Sägewerk gelagert, was die Auflösung
+etwas schwieriger macht.
+
+\paragraph{Die Magiergilde}
+
+Man ist verwirrt, aber wenn man vertrauenserweckend erscheint, werden die 
+Magier hilfsbereit sein, auch wenn sie selbst nicht ganz genau wissen, wonach 
+sie suchen sollen. Mit jedem Tag fallen immer mehr Magier in den Bann
+von \drugname{} und es wird schwieriger, Informationen verbal zu erhalten.
+Dafür wird es umso einfacher, diese aus der Bibliothek zu extrahieren.
+
+\paragraph{Die Hexenjäger}
+
+Die Stadt ist groß genug, um eine kleine Vertretung der Lichtsucher zu
+beherbergen. Nun ist aber in diesem Ort schon eine längere Zeit nichts
+passiert, und in dieser Vertretung langweilt sich eine Hexenjägerin mit
+einem Lehrling. Da sie eine direkte Gefahr für Rasputin sind, werden sie
+zuerst ausgeschaltet. Spätestens nach einem Tag werden sie von dem
+Eisbären besucht, der ihnen einen „Brief” (in Wahrheit eine Rolle mit
+\drugname{}) zustellt.
+
+\paragraph{Ein geheimes Treffen}
+
+In der Nacht nach der ersten Szene wird den Abenteurern eine Nachricht 
+zugestellt. Sie ist hastig geschrieben und darin wird der zauberkundigste der 
+Abenteurer im Morgengrauen an einem Friedhof um ein Treffen mit dem Absender 
+gebeten. Sie wird nach Möglichkeit persönlich zugestellt.
+
+Auf dem Friedhof erwartet sie die Ehefrau des kürzlich verfluchten
+Magiers.  Sie ist gleichzeitig Bibliothekarin der Magiergilde und ist
+sich relativ sicher, dass man einige Informationen finden kann; viel
+mehr Hilfe kann sie aber nicht leisten, da sie Angst um sich, ihre
+Familie und andere hat.  Zumindest aber haben die Abenteurer eine
+Möglichkeit, über Wissen+Weisheit den Fall aufzudecken. 
+
+Bei dem Treffen ist es wichtig, dass die Abenteurer keine Dummheiten
+machen. Falls sie laut oder zu auffällig sind, ist das Treffen
+abgesagt, auf dem Treffpunkt liegt eine Nachricht „Vielleicht sollten
+Sie etwas vorsichtiger sein”.
+
+\paragraph{Ein Konzert}
+
+Für kulturbegeisterte Abenteurer gibt es ein kleines Schmankerl, denn
+gerade tritt im Goldbarren (s.u.) der Barde Vitaly Pripyat auf. Er ist
+durch Titel wie „Mein Magierstab klemmt”, „Zauberschmelze”, „Kühl
+bleiben”, „Tsunami” oder „Mein Herz ist ein brennendes Loch in der Erde”
+bekannt. Bei diesem Konzert hat man die Gelegenheit, den Eisbären zu
+sehen, der gerade \drugname{} in Drogenform an nichtsahnende
+Kulturkonsumenten verteilt.
+
+\paragraph{Der Fluch verbreitet sich}
+
+Am dritten Tag stellen die PCs fest (sie können das auch früher sehen,
+aber spätestens dann wird ihnen das explizit mitgeteilt), dass die
+Unterschicht irgendwohin verschwindet. Es gibt weniger Bettler, der
+Marktplatz ist nicht so laut wie üblich und die üblichen Nicht
+Anständigen Orte sind relativ leer. Wenn man nachfragt, wird gesagt,
+dass viele seit dem letzten Abend nicht gekommen sind, man hat sie nicht
+mehr gesehen. Falls man zielgerichtet nachfragt, wird gesagt, dass viele
+sich mit dem tollen \drugname{} zugedröhnt haben und den Rausch
+ausschlafen wollten. Einen auffällig großen Typen (den Bären, wen denn
+sonst?) hat man auch gesehen, er hat \drugname{} verteilt.
+
+\subsection{Die Wahl des Bürgermeisters}
+
+Zwei Wochen nach Beginn des Abenteuers wird gewählt. Der Wahlmodus ist einfach: 
+Alle Mitglieder des Stadtrats stimmen in einem öffentlichen Verfahren auf dem 
+Marktplatz ab. Es darf in der Theorie jeder Bürger der Stadt mit den üblichen 
+Einschränkungen gewählt werden. Das ist auch die Lücke, die Bragin ausnutzen 
+möchte.
+
+Im besten Fall ist das die abschließende Szene mit Action. Bragin wird
+in jedem Fall versuchen, den Stadtrat durch den Zauber handlungsunfähig
+zu machen, im schlimmsten Fall hat er ein paar loyale Söldner, mit denen
+er versuchen wird, den Stadtrat zu beeinflussen.
+
+\paragraph{Option A:\@ Alles läuft nach Plan}
+Falls der Zauber nicht gebannt ist, wird Bragin die von ihm verzauberten
+Mitglieder des Stadtrats dazu bringen, ihn zu wählen. Er ist
+vergleichsweise selbstsicher und wird außer den Zombies vielleicht einen
+oder zwei Söldner stellen; die anderen werden sein Haus bewachen.
+
+\paragraph{Option B:\@ Versenkte Mittel}
+Falls die Abenteurer hinreichend viel Aufmerksamkeit erregt haben (aber
+den Fluch nicht vollständig gebannt haben), kümmert sich Bragin um
+Verstärkung im Form von (Anzahl Abenteurer $\times 2$) Söldnern; im
+allergrößten Notfall wird er mehr oder weniger subtil Geiseln nehmen.
+
+Falls Bragin hinreichend effektvoll außer Dienst gesetzt wird, werden
+die Abenteurer entsprechend von den ehrenwerten Bürgern der Stadt
+entlohnt (magische Waffen, Ruf, was auch immer die lokale Produktion
+hergibt). Falls das nicht passiert, Bragin zum Bürgermeister erklärt
+wird und die Abenteurer noch lebendig sind, verwandelt sich der Auftrag.
+Stahlhand trifft dann die Abenteurer in den folgenden Stunden und
+verkündet ihnen: "`Ich weiß nicht, wie das passiert ist. Es ist mir auch
+nicht so wichtig. Ich weiß, dass mein Stadtrat dazu gezwungen wurde. Ich
+nehme an, dass ihr etwas damit zu tun habt. Ich schlage euch vor, euren
+Fehler zu korrigieren. Noch diese Nacht soll Bragin von der Bildfläche
+verschwinden. Ihr am besten auch. Vergesst nicht, dass wir ab jetzt in
+einem Boot stecken."'
+
+\paragraph{Option C:\@ Hey! Wo ist die Action?}
+Falls die Abenteurer es überraschenderweise schaffen sollten, Bragin und
+Rasputin einzeln zu besiegen, verläuft die Wahl relativ unspektakulär.
+Dafür dürfen die Helden alles looten, was sie finden.
+
+\subsection{Abschluss}
+
+Falls alles gut geht und die Bösewichte neutralisiert wurden, lädt der
+noch oder schon wieder amtierende Bürgermeister die Abenteurer
+(+Helfer-NPCs) zu einem Gespräch ohne weitere Zeugen ein. Er fragt sie
+nach den Details aus, und bietet, erfreut über den glücklichen Ausgang
+der Ermittlungen, Belohnungen an:
+\begin{itemize}
+  \item magische Waffen (nichts außerordentliches, aber nichts, was man
+    einfach so kaufen kann),
+  \item Ermittlungen im Auftrag des Bürgermeisters (für potenzielle
+    Folgeabenteuer),
+  \item Geld (jeweils 70GS pro Abenteurer),
+  \item Empfehlungsbriefe
+\end{itemize}
+
+\section{Stadt}
+
+\subsection{Hintergrund und Bewohner}
+
+Das Geschehen findet in Saragin statt. Saragin ist eine Stadt mit 900
+Einwohnern, von denen eine signifikante Anzahl (200) Zwerge sind. Die
+Stadt lebt von Tagebau und der damit verwandten Schwerindustrie, so
+schwer, wie man sie auf Midgard halt finden kann. Seine spirituellen
+Nachbarn in anderen Sphären sind Vorkuta, ehem. Cardiff, ehem.
+Saarbrücken und Norilsk, das Stadtbild ist nicht ganz unähnlich. Die
+Meistereien der Zwerge rußen freundlich in den Himmel, das einladende
+Hämmern und Klopfen kann man in jeder Ecke der Stadt gut hören. Die
+Stadt baut Kohle, Metalle und interessante Kristalle ab und wandelt sie
+in Schwerter, Schilde, magische Artefakte und ab und an Haushaltswaren
+um.
+
+Die Geschichte der Stadt ist lang. Die Zwerge haben hier schon sehr
+lange gewohnt, doch die Menschen, die (aus geologischer Sicht) recht
+frisch in diesen Gebieten sind, haben das Leben hier eher bereichert als
+umgekehrt. Viele der Bewohner sind verurteilte Verbrecher, die ihre
+Sünden in den Minen kompensieren mussten (oder noch müssen). Faktisch
+sind das gar nicht (mehr) so viele, aber die in diesen Kreisen
+gewöhnliche Umgangsart hat sich mehr als notwendig in das Leben der
+Stadt eingeprägt.
+
+Die Bewohner der Stadt sind
+\begin{itemize}
+  \item 200 Zwerge: Tagebau, Industrie, Hafenverwaltung
+  \item 650 Menschen: Handel, (Zwangs-) Arbeiter, Magier
+  \item 50 andere: Durchreisende Händler, der eine verlaufene Elf, …
+\end{itemize}
+
+\subsection{Orte (nicht notwendigerweise plotrelevant)}
+
+\subsubsection{Gaststätten}
+
+\begin{description}
+\item[Das Einhorn] ist das Sinnbild für die ranzigste, abgewrackteste
+  Kneipe auf Midgard. Keine nur im Geringsten anständige Person möchte
+  nicht einmal in einem gemeinsamen Kontext mit diesem Lokal gefunden
+  werden, geschweige denn von physikalischer Nähe. Es treiben sich da
+  weitgehend Kleinkriminelle, Bettler und andere Menschen und
+  menschenähnliche Gestalten herum, die von den feinen Manieren nicht
+  entstellt wurden. Je nach Tageszeit kann eine Schlägerei entstehen;
+  das schlimmste jedoch sind lokale missglückte Gestalten, die sich für
+  Barden halten und traurig anmutende Lieder über das harte Los eines
+  Gefangenen spielen, die musikalisch und textuell unter aller Sau sind.
+
+  \begin{verse}
+    Das Leben ist hart \\
+    Wie meine Gedichte \\
+    Doch im Herzen bin ich zart \\
+    Wie der Turanerin ihre Brüste\footnote{Der Autor möchte sich hiermit
+    ausdrücklichen von den in diesem Gedicht lyrischen Mitteln
+  distanzieren.}
+  \end{verse}
+
+\item[Zum Becher] ist eine klassische Arbeiterkneipe. Da kann man im
+  Grunde nette und freundliche, wenn auch manchmal sehr einfach
+  gestrickte Menschen finden, die zwar für abstruse Unterhaltung sorgen
+  können, aber im Durchschnitt ziemlich normal sind. Es kommen so
+  Sprüche wie „Diese Halblinge, was wollen sie alle hier?” und „Nein,
+  verstehe mich nicht falsch, mein bester Freund ist Elf…”
+
+\item[Der Goldbarren] ist ein mehrheitlich zwergisches Lokal, es
+  empfängt aber auch Menschen. Es besticht durch die glänzenden
+  Schilder, nahrhaftes Essen und gutes Bier, schreckt aber durch relativ
+  hohe Preise ab. Da die meisten Zwerge in der Industrie arbeiten, ist
+  das für sie weitgehend in Ordnung, für einen Wanderzirkus können die
+  Preise auch abschreckend wirken.
+
+\item[Das goldene Lamm] wird von den wohlhabenderen Bewohnern gerne
+  frequentiert.  Hohe Qualität, hohe Preise und das eine oder andere
+  kulturelle Phänomen, falls welche diese Stadt im Norden besuchen.
+  Kanonischer Ort, in dem man feiert oder auch mit den wichtigen Leuten
+  der Stadt zu Abend isst.
+
+\item[Die Insel] zeichnet sich dadurch aus, dass sie weder Schilder noch
+  sonstige Aushänge hat und von außen nicht als ein Lokal
+  identifizierbar ist. Hier kann man sich ungestört vom Leben der Stadt
+  und dem alltäglichen Stress erholen und vielleicht die eine oder
+  andere wichtige Verhandlung führen. Das Stichwort ist hier
+  „ungestört”: Musik, Musikinstrumente, singende Barden, Animateure und
+  professionelle Hochzeitsorganisatoren sollen draußen bleiben. Besitzer
+  von Musikinstrumenten können sie abgeben, bei einem Versuch, laut zu
+  singen wird man freundlich, aber bestimmt gebeten, zu gehen. Gerüchten
+  zufolge hat man in nicht allzu lang vergangenen raueren Zeiten hier
+  auch Kopfgelder für besonders laute Gäste ausgeschrieben; der Besitzer
+  ist überhaupt nicht daran interessiert, diesen Gerüchten zu
+  widersprechen. Jetzt zumindest ist das ein netter, nicht allzu teurer
+  Ort mit ein paar Zimmern zur privaten Unterhaltung. Als Erinnerung an
+  die guten alten Zeiten gibt es im Menü die Spezialität des Hauses
+  „Bardenherz” (bei einer hinreichend guten Probe auf Schmecken enttarnt
+  es sich als ein -- ziemlich gut gemachtes -- Rinderherz).
+\end{description}
+
+\subsubsection{Magische Infrastruktur}
+
+Die \emph{Magiergilde} besteht aus einem mehrere mittelgroße Gebäude
+umfassenden Komplex mit einem Innenhof. Sie verfügt über eine nicht
+allzu kleine bibliothek und spezialisiert sich in angewandter Magie und
+Thaumatographie (Herstellung magischer Waffen und, wenn man Zeit hat,
+magischer Kleinteile.)
+
+Im Moment befindet sich die Stadt vor einem leichten Wandel. Die Zeiten
+der Zwangsarbeit sind in die Vergangenheit gerückt; die Industrie bringt
+genug Geld ein, um auch an Dinge jenseits magischer Waffen zu denken,
+und so viele Kriege gibt es im Moment auch gar nicht… Karl Petrov denkt
+intensiv über „Befestigen”-Zauber nach, und der Fürst von Belogora hat
+einer Reihe der lokal ansässigen Magier etwas Gold versprochen, wenn sie
+einen Weg finden, magische Spiegel zu konstruieren.
+
+\subsubsection{Sonstige Sehenswürdigkeiten}
+
+Da die Natur eher kalt und unfreundlich ist, hat die Stadt keine
+Stadtmauer. Weglaufen kann man nicht, und hin kommt man ohnehin nur,
+wenn man es wirklich nötig hat.
+
+\subsubsection{Das Sägewerk}
+
+Das alte Sägewerk wird von Bragins Söldnern ($2 \times$ Anzahl der
+Abenteurer) bewacht. Sie haben Langschwerter (EW 8) und Armbrüste (EW 7)
+und keine Angst, sie einzusetzen. Je einer steht auf einem Wachturm, der
+Rest ist über das Gebiet ($1 \times 1$\si{km}) verteilt.
+
+\bestiarium[name=Bragins Södner, mag=false, typ=Mensch, grad=3,
+In=m65, LP=26, AP=38, St=80, Gw=76]{}
+
+\section{NPCs}
+
+In diesem Abschnitt werden die für die Handlung wesentlichen
+Nichtspielercharaktere beschrieben. Meistens beschränkt sich die
+Beschreibung auf die Motivation und den jeweiligen Hintergrund des
+Charakters.
+
+\subsection{Viktor Bragin}
+
+Viktor ist der wesentliche Antagonist. Seine normale Beschäftigung ist
+der Handel, allerdings hat er durch das viele Geld, das er verdient hat,
+einen Drang zu Macht entdeckt. Die Tatsache, dass das Fürstentum
+Belogora faktisch von der Zentralregierung unabhängig ist, hat ihn zur
+Idee verleitet, die Stadt Saragin unter den Nagel zu reißen, wenn schon
+die völkerrechtlichen Verhältnisse nicht so ganz klar sind.
+
+\paragraph{Motivation und Hintergrund} Macht, Geld. Glaubt relativ
+ernsthaft, dass er Bürgermeister sein soll, weil er wirklich weiß, wie man
+eine Stadt regiert und niemand anders diesen Posten wirklich verdient
+hat. (Aktuell ist die Stadt zwar weitgehend gepflegt, aber ihm ist das
+egal.) Hat „Fragen geklärt”, aus seiner Jugendzeit sind ein paar Narben
+erkannbar. Es kursieren Gerüchte über seine initiale Anhäufung des
+Kapitals, die verschieden blutig und sicherlich nicht alle falsch sind,
+aber man kann die Wahrheit nur schwer extrahieren, da dies nicht in
+Saragin geschah. Zu den Abenteurern ist er gütig und möchte einen
+Eindruck eines guten Verwalters erwecken. Falls er mit der Wahrheit
+konfrontiert wird, gibt er sich unverständlich; „als ob man in einer
+Stadt mit einer Diebesgilde von Moral sprechen kann“. Falls er mit
+Staatsgewalt überführt wird, wird er versuchen, zu fliehen. Vielleicht
+wird er auch Erfolg haben, denn sonst haben die Lichtsucher und der
+Fürst von Geltin/Belogora ein Problem mit ihm, im Notfall wegen
+Steuerhinterziehung und Missachtung magischer Sicherheitsvorschriften…
+
+\bestiarium[name=Viktor Bragin, mag=false, typ=Mensch, grad=5,
+In=m85, LP=28, AP=40, St=75, Gw=70]{}
+
+\subsection{Alexander Stahlhand}
+
+Alexander Stahlhand ist der amtierende Bürgermeister der Stadt Saragin. 
+
+\paragraph{Motivation und Hintergrund} Macht, Geld, aber in etwas
+anderen Maßstäben. Er regiert diese Stadt schon seit 15 Jahren und ist
+in dieser Zeit etwas entspannt und ruhig geworden. Zumindest gibt er
+sich wie eine entspannte Vaterfigur.
+
+In Wahrheit ist er ein administrativ-politisches Tier mit weit
+reichender Erfahrung und noch weiter reichendem Gedächtnis. Er kennt
+fast alle Entscheidungsträger dieser Stadt und spielt auf ihren
+gegenseitigen Konflikten wie Frank Zappa auf seiner Gitarre. Die
+Tatsache, dass jemand gegen ihn kandidiert, kann er nicht erklären,
+fühlt aber, dass die Erklärung ihm nicht gefallen wird. Im Notfall kann
+auch er den PCs ein Angebot machen, das sie nicht ablehnen können
+werden.
+
+Auch über ihn kursieren Gerüchte aus seiner Jugend. Die ist zwar etwas
+länger her, aber damals war er als Sohn eines Händlers in das
+Abenteurergeschäft eingestiegen. Nicht alles, was er erlebt hat, war
+großartig, aber vieles brachte ihm Gewinn und Bekanntschaften.
+Irgendwann entschied er sich für einen Karrierewechsel in Richtung
+Administration und Verwaltung.
+
+\subsection{Stanislav Rasputin}
+
+Der zweite Antagonist des Abenteuers is ein Schwarzhexer, der nach
+Wissen und Macht strebt, aber gleichzeitig versucht, in einer doch eher
+magisch dicht besiedelten Stadt nicht aufzufallen. Daher gibt er sich
+als Alchimist und Antiquitätenhändler, der für die magischen Bewohner
+uninteressant und für magische Reisende unauffällig ist.
+
+Er ist in seinen 30ern, sieht durchschnittlich aus und hat einen
+durchdringenden Blick, der schon viele Besucher verjagt hat. Er verfügt
+über eine Reihe von Zaubern, unter Anderem \emph{Angst}, \emph{Blitze
+Schleudern}, \emph{Wahnsinn}, \emph{Bannen von Zauberwerk} u.\,A.
+
+\paragraph{Hintergrund} Ein relativ üblicher 08/15-Schwarzhexer. Dadurch
+interessant, dass er in einer Stadt lebt und bisher unauffällig war. Der
+Grund dafür ist einfach: Bis zur Entdeckung des Buchs der Gesetze hat er
+sich auf Nachforschungen und Suche nach Alliierten konzentriert.
+
+\bestiarium[name=Stansilav Rasputin, mag=true, typ=Mensch, grad=6,
+In=m97, LP=21, AP=78, zauberEW=18, St=45, Gw=65]{}
+
+\subsection{Der Eisbär (Bar)}
+
+Bar ist ein (fast) normaler Nordlandbarbar, der aus vielen verschiedenen
+Gründen sich nicht mehr im Nordland aufhält. Seit er in Saragin
+aufgeschlagen ist, hat Rasputin ihn als Helfer und Mensch fürs Grobe
+eingestellt. Wie zu erwarten, ist Bar groß und stark, aber auch für
+Barbaren überdurchschnittlich intelligent.
+
+\paragraph{Hintergrund} Bar ist in der Gegend um Birka herum
+aufgewachsen und hat sich mit dem dortigen Geschäftsmodell nicht
+anfreunden können. Hat mehr als genug Feinde gemacht, nach seiner
+unfreiwilligen Abreise sind sehr plötzlich ein paar Häuser der dort
+ansässigen Händler in Flammen aufgegangen. Mag deswegen Menschen und
+Zivilisation nicht und ist mit den Methoden von Rasptuin/Bragin zu einem
+Großteil einverstanden.
+
+Er ist ein sehr starker NPC, was ihn zu einem sehr gefährlichen
+Gegner macht. Er besitzt eine magische Waffe (Streitkolben mit Schaden
+2W6+2, und Angriffsbonus +4, was zusammen einen Angriffswert von 18
+ergibt), ist aber hinreichend vorsichtig, um sich nicht in ausweglose
+Situationen zu verwickeln.
+
+\paragraph{Für erfahrene Abenteurer} Zur weiteren Erschwerung ist er ein
+Souverän. Ein Souverän in dem Sinne, als dass er einen Ring mit sich
+trägt, in dem ein höherer Dämon gefangen ist. Es ist eine sehr dumme
+Idee, diesen Dämon freizulassen; Dämonen ohne Zwingkreis sind an sich
+sehr gefährlich, und dieser wird alles im Umkreis von 1km mit
+\drugname{} verzaubern.
+
+\paragraph{Karl Petrov}
+
+Karl ist einer der kompetentesten Magier der einschlägigen Gilde. Seine
+Kompetenz in Sachen Fernwirkung von Magie ist nur durch seine
+Umstrittenheit übertroffen. Petrov ist recht impulsiv, kann sich zwar in
+"`normalen"' Situationen zurückhalten, wird aber keiner Versuchung
+widerstehen können. Eine dieser Versuchungen ist die Fernwirkung der
+Magie, die ihn dazu veranlasst hat, ein Buch mit dem Titel „Sprechen mit
+magischen Gegenständen” zu schreiben. Dies (und manche seiner anderer
+Eigenheiten) sorgt für nicht allzu feindselige, aber manchmal ziemlich
+grobe Lacher.
+
+\end{document}
